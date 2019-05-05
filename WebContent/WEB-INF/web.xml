@@ -35,11 +35,21 @@
   <servlet>
     <display-name>register</display-name>
     <servlet-name>register</servlet-name>
-    <servlet-class>com.qams.servlets.RegisterServlet</servlet-class>
+    <servlet-class>com.qams.servlets.RegisterPageServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>register</servlet-name>
     <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>registration</display-name>
+    <servlet-name>registration</servlet-name>
+    <servlet-class>com.qams.servlets.RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registration</servlet-name>
+    <url-pattern>/registration</url-pattern>
   </servlet-mapping>
   
 	<filter>

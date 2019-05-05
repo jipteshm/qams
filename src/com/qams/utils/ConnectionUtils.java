@@ -6,7 +6,7 @@ import java.sql.SQLException;
   
 public class ConnectionUtils {
   
- public static Connection getMySQLConnection()
+ public static Connection getConnection()
          throws ClassNotFoundException, SQLException {
      // Note: Change the connection parameters accordingly.
      String hostName = "localhost";
@@ -31,4 +31,5 @@ public class ConnectionUtils {
              password);
      return conn;
  }
+ 
 }

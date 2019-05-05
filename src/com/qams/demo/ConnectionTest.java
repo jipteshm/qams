@@ -5,9 +5,9 @@ import java.sql.SQLException;
 
 import com.qams.utils.ConnectionUtils;
 
-public class Demo {
+public class ConnectionTest {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
-		Connection conn = ConnectionUtils.getMySQLConnection();
+		Connection conn = ConnectionUtils.getConnection();
 		System.out.println(conn);
 	}
 }

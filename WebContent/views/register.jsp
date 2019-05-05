@@ -3,30 +3,30 @@
 <!DOCTYPE html>
 <div class="login-container">
 	<h2 class="align-center">Register Here</h2>
-	<form action="">
+	<form action="registration">
 	
 	  <div class="login-form">
-	    <label for="uname"><b>First Name</b></label>
-	    <input type="text" placeholder="Enter First Name" name="uname" required>
+	    <label for="firstname"><b>First Name</b></label>
+	    <input type="text" placeholder="Enter First Name" name="firstname" required>
 	    
-	    <label for="uname"><b>Last Name</b></label>
-	    <input type="text" placeholder="Enter Last Name" name="uname" required>
+	    <label for="lastname"><b>Last Name</b></label>
+	    <input type="text" placeholder="Enter Last Name [Optional]" name="lastname">
 	
-	    <label for="psw"><b>Email</b></label>
-	    <input type="password" placeholder="Enter Your Email" name="psw" required>
+	    <label for="email"><b>Email</b></label>
+	    <input type="text" placeholder="Enter Your Email" name="email" required>
 	    
-	    <label for="psw"><b>Mobile</b></label>
-	    <input type="password" placeholder="Enter Your Mobile Number" name="psw" required>
+	    <label for="mobile"><b>Mobile</b></label>
+	    <input type="text" placeholder="Enter Your Mobile Number" name="mobile" required>
+	    
+	    <label for="pwd"><b>Password</b></label>
+	    <input type="text" placeholder="Enter a Strong Password" name="password" required>
 	        
 	    <button type="submit">Register</button>
-	    <label>
-	      <input type="checkbox" checked="checked" name="remember"> Remember me
-	    </label>
+	   
 	  </div>
 	
 	  <div class="button-container" style="background-color:#f1f1f1">
-	    <button type="button" class="cancelbtn">Cancel</button>
-	    <span class="psw">Forgot <a href="#">password?</a></span>
+	     <span class="psw">Already Registered? <a href="login">Login</a></span>
 	  </div>
 	</form>
 </div>
