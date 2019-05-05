@@ -6,7 +6,6 @@ import java.sql.Timestamp;
 
 import com.qams.models.User;
 import com.qams.utils.ConnectionUtils;
-import com.qams.utils.DateUtils;
 
 public class RegistrationDAO {
 	

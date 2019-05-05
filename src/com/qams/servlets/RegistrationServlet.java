@@ -37,10 +37,11 @@ public class RegistrationServlet extends HttpServlet{
 		user.setPasswordHash(MD5Util.getMD5Signature(password));
 		
 		RegistrationDAO registrationDAO = new RegistrationDAO();
-		registrationDAO.createUser(user);
-		
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/login?registerStatus=success");
-		dispatcher.forward(request, response);
+		int count = registrationDAO.createUser(user);
+		if(count > 0)
+			response.sendRedirect("login?registerStatus=success&firstName="+firstName);
+		else 
+			System.out.println("There is some Server problem, Please try after some time");
         
    }
 
