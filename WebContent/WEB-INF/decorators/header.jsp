@@ -7,9 +7,12 @@
 </div> 
 <div class="topnav">
   <a href="#">Dashboard</a>
-  <a href="#">Ask a Question</a>
+  <a href="#">My Dashboard</a>
+  <a href="askquestion">Ask a Question</a>
   <a href="#">My Quesions</a>
   <a href="#">My Answers</a>
+  <a href="#">My Comments</a>
+  <a href="#">My Favourite Questions</a>
   <a href="register" style="float:right">Register</a>
   <a href="login" style="float:right">Login</a>
 </div>

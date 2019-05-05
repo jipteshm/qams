@@ -52,6 +52,16 @@
     <url-pattern>/registration</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <display-name>askquestion</display-name>
+    <servlet-name>askquestion</servlet-name>
+    <servlet-class>com.qams.servlets.AskQuestionPageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>askquestion</servlet-name>
+    <url-pattern>/askquestion</url-pattern>
+  </servlet-mapping>
+  
 	<filter>
 		<filter-name>sitemesh</filter-name>
 		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>

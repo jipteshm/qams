@@ -38,6 +38,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-right:1px #958b8b solid;
 }
 
 /* Change color on hover */
@@ -111,7 +112,7 @@ body {
 
 form {border: 3px solid #f1f1f1;}
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -206,5 +207,10 @@ span.psw {
 	float: right;
 }
 
+
+.question-description{
+		height: 250px;
+		width: 600px;
+}
 
 
