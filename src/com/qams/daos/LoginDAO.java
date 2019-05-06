@@ -12,7 +12,7 @@ public class LoginDAO {
 	public boolean checkUserEmail(String email) {
 		try {
 			Connection con = ConnectionUtils.getConnection();
-			PreparedStatement ps = con.prepareStatement("SELECT * FROM USER WHERE email = ?");
+ 			PreparedStatement ps = con.prepareStatement("SELECT * FROM USER WHERE email = ?");
 			ps.setString(1, email);
 			
 			ResultSet rs = ps.executeQuery();
