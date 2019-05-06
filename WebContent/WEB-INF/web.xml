@@ -62,6 +62,17 @@
     <url-pattern>/askquestion</url-pattern>
   </servlet-mapping>
   
+  
+   <servlet>
+    <display-name>doLogin</display-name>
+    <servlet-name>doLogin</servlet-name>
+    <servlet-class>com.qams.servlets.DoLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>doLogin</servlet-name>
+    <url-pattern>/doLogin</url-pattern>
+  </servlet-mapping>
+  
 	<filter>
 		<filter-name>sitemesh</filter-name>
 		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
