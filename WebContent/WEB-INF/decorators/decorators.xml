@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/decorators">
+	<excludes>
+		<!-- <pattern>/styles/*</pattern>
+        <pattern>/scripts/*</pattern>
+        <pattern>/images/*</pattern> -->
+	</excludes>
+    <decorator name="qams_template" page="template.jsp">
+          <pattern>/*</pattern>
+    </decorator>
+</decorators>

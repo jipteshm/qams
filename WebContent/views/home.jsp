@@ -4,9 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Question Answer Management System</title>
 </head>
 <body>
-
+	<%
+	if(session.getAttribute("userId") != null){
+	%>
+		<div class="welcome-content">
+			 Hello <%= session.getAttribute("firstName") %>, Welcome to QAMS.
+		</div>
+	<%
+	}
+	%>
 </body>
 </html>

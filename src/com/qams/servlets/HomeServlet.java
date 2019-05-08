@@ -13,7 +13,12 @@ import javax.servlet.http.HttpServletResponse;
 
 public class HomeServlet extends HttpServlet{
 	
-	 public HomeServlet() {
+	 /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public HomeServlet() {
 	     super();
 	 }
 	 
@@ -24,7 +29,7 @@ public class HomeServlet extends HttpServlet{
 	        
 	       // Forward to /WEB-INF/views/homeView.jsp
 	       // (Users can not access directly into JSP pages placed in WEB-INF)
-	       RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/views/home/home.jsp");
+	       RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/views/home.jsp");
 	        
 	       dispatcher.forward(request, response);
 	        
