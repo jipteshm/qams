@@ -184,6 +184,8 @@ span.psw {
 .alert.success {background-color: #4CAF50;}
 .alert.info {background-color: #2196F3;}
 .alert.warning {background-color: #ff9800;}
+.alert.error {background-color: #FF0000;}
+
 
 .closebtn {
   margin-left: 15px;
@@ -213,4 +215,9 @@ span.psw {
 		width: 600px;
 }
 
-
+.welcome-content{
+	padding: 50px;
+	margin:0 auto;
+	width: 900px;
+	height: 500px;
+}

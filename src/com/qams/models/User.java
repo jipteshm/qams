@@ -1,6 +1,10 @@
 package com.qams.models;
 
+import com.qams.servlets.DoLoginServlet.LoginStatus;
+
 public class User {
+	
+	private int id;
 	
 	private String firstName;
 	
@@ -11,6 +15,8 @@ public class User {
 	private String mobile;
 	
 	private String passwordHash;
+	
+	private LoginStatus loginStatus;
 
 	public String getFirstName() {
 		return firstName;
@@ -50,6 +56,22 @@ public class User {
 
 	public void setPasswordHash(String passwordHash) {
 		this.passwordHash = passwordHash;
+	}
+
+	public LoginStatus getLoginStatus() {
+		return loginStatus;
+	}
+
+	public void setLoginStatus(LoginStatus loginStatus) {
+		this.loginStatus = loginStatus;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 

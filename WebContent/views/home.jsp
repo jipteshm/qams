@@ -7,6 +7,14 @@
 <title>Question Answer Management System</title>
 </head>
 <body>
-Welcome to Question Answer Forum
+	<%
+	if(session.getAttribute("userId") != null){
+	%>
+		<div class="welcome-content">
+			 Hello <%= session.getAttribute("firstName") %>, Welcome to QAMS.
+		</div>
+	<%
+	}
+	%>
 </body>
 </html>
