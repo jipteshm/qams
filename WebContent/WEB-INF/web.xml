@@ -83,6 +83,27 @@
     <url-pattern>/logout</url-pattern>
   </servlet-mapping>
   
+  
+     <servlet>
+	    <display-name>forgot-password</display-name>
+	    <servlet-name>forgot-password</servlet-name>
+	    <servlet-class>com.qams.servlets.ForgotPasswordPageServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>forgot-password</servlet-name>
+	    <url-pattern>/forgot-password</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <display-name>reset-password</display-name>
+	    <servlet-name>reset-password</servlet-name>
+	    <servlet-class>com.qams.servlets.ForgotPasswordServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>reset-password</servlet-name>
+	    <url-pattern>/reset-password</url-pattern>
+	  </servlet-mapping>	
+  
 	<filter>
 		<filter-name>sitemesh</filter-name>
 		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>

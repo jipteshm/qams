@@ -38,6 +38,16 @@
 	}
 	%>
 	
+	<%
+	if(request.getAttribute("status") != null && request.getAttribute("status").equals("passwordUpdated")){
+	%>
+		<div class="alert success">
+			Congratulations! Your password has been updated! Please login with your new password.
+		</div>
+	<%
+	}
+	%>
+	
 	<h2 class="align-center">Login</h2>
 	<form action="doLogin">
 	

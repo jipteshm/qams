@@ -16,7 +16,7 @@ public class LoginDAO {
 		User user = null;
 		try {
 			Connection con = ConnectionUtils.getConnection();
- 			PreparedStatement ps = con.prepareStatement("SELECT id, firstName, lastName, email, mobile, passwordHash FROM User "
+ 			PreparedStatement ps = con.prepareStatement("SELECT id, firstName, lastName, email, mobile, passwordHash FROM user "
  					+ "	WHERE email = ? OR mobile = ? ");
 			ps.setString(1, emailOrMobile);
 			ps.setString(2, emailOrMobile);

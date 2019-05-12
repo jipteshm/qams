@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.qams.daos.RegistrationDAO;
 import com.qams.models.User;
+import com.qams.service.RegistrationService;
 import com.qams.utils.MD5Util;
 
 public class RegistrationServlet extends HttpServlet{
@@ -36,12 +37,15 @@ public class RegistrationServlet extends HttpServlet{
 		user.setMobile(mobile);
 		user.setPasswordHash(MD5Util.getMD5Signature(password));
 		
-		RegistrationDAO registrationDAO = new RegistrationDAO();
-		int count = registrationDAO.createUser(user);
-		if(count > 0)
+		
+		RegistrationService registerService =  new RegistrationService();
+		
+		boolean registerStatus = registerService.registerUser(user);
+		
+		if(registerStatus)
 			response.sendRedirect("login?registerStatus=success&firstName="+firstName);
-		else 
-			System.out.println("There is some Server problem, Please try after some time");
+		else
+			response.sendRedirect("register?registerStatus=error");
         
    }
 
