@@ -12,7 +12,7 @@ public class ConnectionUtils {
      String hostName = "localhost";
      String dbName = "qams";
      String userName = "root";
-     String password = "123123";
+     String password = "root";
      return getMySQLConnection(hostName, dbName, userName, password);
  }
   

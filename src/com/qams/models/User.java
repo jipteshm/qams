@@ -1,6 +1,6 @@
 package com.qams.models;
 
-import com.qams.servlets.DoLoginServlet.LoginStatus;
+import com.qams.servlets.LoginServlet.LoginStatus;
 
 public class User {
 	

@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.qams.models.User;
-import com.qams.servlets.DoLoginServlet.LoginStatus;
+import com.qams.servlets.LoginServlet.LoginStatus;
 import com.qams.utils.ConnectionUtils;
 
 public class LoginDAO {
@@ -16,7 +16,7 @@ public class LoginDAO {
 		User user = null;
 		try {
 			Connection con = ConnectionUtils.getConnection();
- 			PreparedStatement ps = con.prepareStatement("SELECT id, firstName, lastName, email, mobile, passwordHash FROM User "
+ 			PreparedStatement ps = con.prepareStatement("SELECT id, firstName, lastName, email, mobile, passwordHash FROM user "
  					+ "	WHERE email = ? OR mobile = ? ");
 			ps.setString(1, emailOrMobile);
 			ps.setString(2, emailOrMobile);
