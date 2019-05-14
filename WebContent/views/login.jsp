@@ -3,6 +3,9 @@
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
+
+ <script src="script/login.js"></script> 
+
 <div class="login-container">
 
 	<%
@@ -19,13 +22,23 @@
 	<%
 	if(request.getAttribute("status") != null && request.getAttribute("status").equals("notRegistered")){
 	%>
-		<div class="alert info">
+		<div class="alert error">
 			 Dear user, you are not registered with us. Please register first and try login again.
 		</div>
 	<%
 	}
 	%>
 	
+	
+	<%
+	if(request.getParameter("status") != null && request.getParameter("status").equals("notRegistered")){
+	%>
+		<div class="alert error">
+			 Dear user, you are not registered with us. Please register first and try login again.
+		</div>
+	<%
+	}
+	%>
 	
 	
 	<%
@@ -49,14 +62,16 @@
 	%>
 	
 	<h2 class="align-center">Login</h2>
-	<form action="doLogin">
+	<form action="doLogin" onsubmit="return validateLogin();" name="loginForm">
 	
 	  <div class="login-form">
 	    <label for="uname"><b>Email / Mobile</b></label>
-	    <input type="text" placeholder="Enter Email or Mobile" name="emailOrMobile" required>
+	    <input id="emailOrMobile" type="text" placeholder="Enter Email or Mobile" name="emailOrMobile" >
+	    <div id="emailOrMobileError" class="errorMsg" style="display: none;"></div>
 	
 	    <label for="psw"><b>Password</b></label>
-	    <input type="password" placeholder="Enter Password" name="password" required>
+	    <input id="password" type="password" placeholder="Enter Password" name="password" >
+	    <div id="passwordError" class="errorMsg" style="display: none;"></div>
 	        
 	    <label>
 	      <input type="checkbox" checked="checked" name="remember"> Remember me

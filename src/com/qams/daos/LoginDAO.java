@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.qams.models.User;
-import com.qams.servlets.DoLoginServlet.LoginStatus;
+import com.qams.servlets.LoginServlet.LoginStatus;
 import com.qams.utils.ConnectionUtils;
 
 public class LoginDAO {
